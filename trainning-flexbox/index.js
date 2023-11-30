@@ -1,11 +1,19 @@
-
-var divs;
+/*
+var divarray = document.querySelectorAll('.container');
 function inputTextInDiv(){
-    divs  = document.querySelectorAll('childs');
-    divs.forEach(div => {
+ 
+    divarray.forEach(div => {
         var estilo = div.querySelector('.child');
-        estilo.innerHTML = "Exemplo";
+        estilo.querySelector('p').textContent = "Exemplo";
     });
 }
 inputTextInDiv();
-
+*/
+var divarray = document.querySelectorAll('.container');
+ 
+divarray.forEach(child => {
+    //var paragrafo = div.querySelectorAll('div');
+    var div = child.querySelector('p').textContent;
+    div = 'Exemplo';
+    console.log(div);
+})
