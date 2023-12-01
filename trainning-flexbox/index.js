@@ -1,19 +1,13 @@
-/*
-var divarray = document.querySelectorAll('.container');
-function inputTextInDiv(){
- 
-    divarray.forEach(div => {
-        var estilo = div.querySelector('.child');
-        estilo.querySelector('p').textContent = "Exemplo";
-    });
-}
-inputTextInDiv();
-*/
-var divarray = document.querySelectorAll('.container');
- 
-divarray.forEach(child => {
-    //var paragrafo = div.querySelectorAll('div');
-    var div = child.querySelector('p').textContent;
-    div = 'Exemplo';
-    console.log(div);
-})
+
+const divChilds= document.querySelectorAll('.child');
+//const divChildren = divContainer.children;
+
+
+divChilds.forEach((divs,index, divContainer) => {
+    if(divs.textContent == "_"){
+        divs.textContent = "Exemplo";
+        console.log(divs.textContent);  
+    }
+});
+
+//console.log(divChilds); 
