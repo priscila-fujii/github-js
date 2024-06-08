@@ -26,10 +26,37 @@ F(1+2) = F(1+1) + F(1)
     retorne F(n-1) + F(n-2);
 
 */
-let aux=0;
-function seqFibinacci(x){
-    if((x == 1) || (x == 0)) return x;
-    console.log(x);
-    return (seqFibinacci(x-1) + seqFibinacci(x-2));
+v1 = 0;
+v2 = 0;
+v3 = 0;
+function fibonacci(n) {
+    if (n == 0){
+        return n;
+    }else if(n == 1){
+        return n;
+    }else if(n>1){
+        v3 = fibonacci(n-1) + fibonacci(n-2);
+    }
+    return 
 }
-seqFibinacci(10);
+  
+console.time("Fibonacci");
+console.log(fibonacci(7));
+console.timeEnd("Fibonacci");
+
+/*
+v1 = 0;
+v2 = 1;
+v3 = 0;
+cont = 0;
+function fibo(limite){
+    while(cont < limite){
+        cont+= 1;
+        v3 = v1 + v2;
+        console.log(`${v1} + ${v2} = ${v3}, `);
+        v1 = v2;
+        v2 = v3;
+    }
+}
+fibo(5);
+*/
