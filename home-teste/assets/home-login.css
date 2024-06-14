@@ -43,4 +43,13 @@ form{
     transition: all linear 190ms;
     font-size: 0.9em;
     color: black;
+    margin-bottom: 5px;
+}
+
+.campo::placeholder{
+    color:#666;
+}
+
+.campo:focus {
+    border-color: blue;
 }
