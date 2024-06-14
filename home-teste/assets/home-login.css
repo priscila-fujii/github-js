@@ -31,7 +31,16 @@ formLogin = filho
     box-shadow: 10px 10px 40px rgba(0,0,0,0.4);
     gap:5px;   
 }
-p, input, button{
-    margin: 5px;
+form{
     display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.campo{
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: all linear 190ms;
+    font-size: 0.9em;
+    color: black;
 }
