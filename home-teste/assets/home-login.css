@@ -16,7 +16,7 @@ formLogin = filho
     flex-direction: column;
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     justify-content: center;
     align-content:center;
     align-items: center;
@@ -31,14 +31,17 @@ formLogin = filho
     box-shadow: 10px 10px 40px rgba(0,0,0,0.4);
     gap:5px;   
 }
+p{
+    margin: -5px -5px -5px 5px;
+}
 form{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 .campo{
-    padding: 15px;
-    border-radius: 3px;
+    padding: 20px;
+    border-radius: 5px;
     border: 1px solid #ccc;
     transition: all linear 190ms;
     font-size: 0.9em;
@@ -52,4 +55,20 @@ form{
 
 .campo:focus {
     border-color: blue;
+}
+
+.btn {
+    padding: 15px;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: rgb(92, 176, 228);
+    cursor: pointer;
+    transform: all linear 198ms;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: rgb(82, 155, 200);
 }
